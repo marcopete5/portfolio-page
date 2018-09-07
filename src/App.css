@@ -1,0 +1,81 @@
+/* Navbar Component */
+#rotateMe {
+    width: 50px;
+    transition: transform .5s ease-in-out;
+}
+
+#logoLink {
+    padding: 10px 30px 10px 10px;
+    border: 5px solid #494c4e;      
+    color: #494c4e;
+}
+
+#logoLetters {
+    font-family: 'Nunito',sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    color: #494c4e;
+    position: relative;
+    left: 15px;
+    top: -17px;
+    z-index: -1;
+}
+
+/* Home Component */
+#img1 {
+    background-image: url("https://lh3.googleusercontent.com/UAnLBx-tpXTDyWz87zzQ-f3b2tVqs9D6PSAM0Wlvx5fRmmf_QM73mR7c-_lgTHhtyiiPlNiXfgjTshRjTqTffwMFbr8uZI-fsYaF8bcUQXjJjdGmQeFsbknEax0WuTapAOwiLmZv5Rl5VoZC9rsVMmVJdRm5MVzhSyVXt_4tUIuqi-_FYYF7hvrYHJBDS6_p3YqyYk-aYMj41PixtHgThLWls2bsFxMo-bhXuGNBeAoWdt2KB3Ob60FS4ITmkLwCFlNFREgUXRx0kdkgC0OcLwRhCRZu0EVUXXlxrZgwNJp_7v9QyJ5Qeo5evn5CdgWTChO5bgc1oZ4HjYrM6wbaRDbbTI_FUIdJEveraJqBXWnNl9nDEf9CTc-v9uU8aXOxWo6lvraFh9g5Rwp_jsYvnxivtuthACwGTepz-tiu2bL4eokP10Mq7xcd0Ug0xCBckgsOnVDVBOdyiYvOtNJ6rtCrJb3Zy-mUG33oOMFdCMRMLmtamiHQn06qsvw_KmeXEOzHcQvPDldXKNXv5KXYiaJKziU9wNIXFjkcekQgVRWQ1NhpKblFZCdpZJA5rXQ4NnkmIUDKRcg2E8_fajuFii8yEFahAvdYQhqYwsZifS-dOQjNF-YlcMoeouMtJPs=w1068-h712-no");
+    background-position: 36%;
+}
+
+#img2 {
+    background-image: url('./images/profile.jpg');
+    background-position: 46%;
+}
+
+#img3 {
+    background-image: url("https://lh3.googleusercontent.com/MrMhqE5QsJMqUMWpQ84fYxftXwkTK7TLjYD6Ig005EL-j521zic3b5wa9Wu0uWrNBbrHNoXzDMUJVzUKRKlIX7GHWAn-dIkpeJs0S6rUDkcZUKRCVXy_r-B9Am7-sEfgnpKEVzxnl8WlYe_os4T4sBkZPFOQPHCvv4aNxQC2G534TqAurPyjFKqNBhskeU35BVWXJcD0TIl_bCs5gf_-RGX8YPKBnvqOItYjJC6Oj-o3mvjOrLpw-gNEFtmiHaKNkdcSw6BkeLKAamumWLs7juJwJDvZcX12P6ZdsLUd8WgM6mpgFgoJTXQjIOgbFySs_tDB5j_LucLnXPsEj1A8DQ08ZWNuUBIw_ZQjKkp30u7jL68hW3OcoOZawt5ytjNvJu2_QaopGNonV7YR3IhBu_TVy2nnXrBHKG4QsdGy65g2GOLxV5969LVRZH09chh4oNF-9dySRb-ThvybmRtPee2FrKkiWxWPU9buGkkNDjDfa6PZDED5b4AkqUmwrrG9Xk-4V3XtzIw81kQT-FD80SaqT_9k746t6bEDWLplmNBuqzYRF1tiV32kR1hIe4-BkLC-XD82QMf1mVqBuMDwiD0weS-qBpTxu7YlDQY-3YcAImM7pvMLV--GmB1xI1c=w950-h712-no");
+    background-position: 48% 64%;
+    background-size: inherit;
+}
+
+/* Resume Component */
+
+#resumeImg {
+    background-image: url('./images/resume_web.png');
+    border: 1px solid #33333370;
+    box-shadow: 2px 2px 4px #000000a3;
+    height: 820px;
+    width: 695px;
+    margin: 100px auto;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+/* Footer Component */
+hr {
+    border: .5px solid #f0eeee;
+}
+
+#gitPic {
+    width: 4%;
+    padding: 18px;
+    text-align: center;
+}
+
+#projectDiv {
+    text-align: center;
+    padding: 15px 0px 84px 0px;
+}
+
+#projectBtn {
+    letter-spacing: .5px;
+    padding: 21px 31px;
+    background-color: #fdfdfd;
+    border-radius: 7px;
+    font-family: "Nunito",sans-serif;
+    font-size: 13px;
+    border-color: #f5c453;
+    font-weight: 500;
+    font-style: italic;
+    color: #494c4e;
+}
