@@ -9,7 +9,8 @@ class Navbar extends Component{
         super()
 
         this.state = {
-            deg: 0
+            deg: 0,
+            display: 'none',
         }
     }
 
@@ -21,30 +22,70 @@ class Navbar extends Component{
         })
     }
 
+    dropDown = () => {
+        this.state.display === 'none' ? this.setState({display: 'block'}) : this.setState({display: 'none'})
+    }
+
     render(){
         const Nav = styled.nav`
             display: grid;
-            grid-template-columns: 2fr 1fr;
+            grid-template-columns: 1fr 1fr;
             padding: 30px;
             position: relative;
             top: 19px;
             left: 44px;
         `
-    
 
         const Links = styled.ul`
             display: flex;
             justify-content: space-evenly;
             position: relative;
             bottom: -15px;
+            right: 2%;
+            height: 25px;
+
+            @media (max-width: 600px) {
+                position: relative;
+                top: 60px;
+                line-height: 50px;
+                right: 100%;
+                margin: 11px 0px;
+                padding: 10px 0px 0px 25px; 
+                display: block;
+                height: 100%;
+              }
         `
-        const Li = styled(Link)`
+        const Lin = styled(Link)`
             text-decoration: none;
             list-style-type: none;
             color: #494c4e;
             font-family: 'Nunito',sans-serif;
             font-weight: 600;
             font-size: 15px;
+        `
+        const Li = styled.li`
+            list-style-type: none;
+            position: relative;
+            right: 15px;
+            display: block;
+            
+
+            @media (max-width: 600px){
+                display: ${this.state.display}; 
+                border-bottom: 1px solid #494c4e; 
+                width: 150%; 
+            }
+        `
+        const Image = styled.img`
+            width: 8%;
+            position: absolute;
+            right: 12%;
+            top: 12px;
+            display: none;
+
+            @media (max-width: 600px){
+               display: block; 
+            }
         `
         
         return (
@@ -55,12 +96,15 @@ class Navbar extends Component{
                     </div>
                         <span id='logoLetters'>MP</span>
                 </div>
-                <Links>
-                    <Li to='/' >Home</Li>
-                    <Li to='/projects' >Projects</Li>
-                    <Li to='/resume' >Resume</Li>
-                    <Li to='/contact' >Contact</Li>
+                <div>
+                <Image onClick={this.dropDown} src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/2000px-Hamburger_icon.svg.png' alt=""/>
+                <Links >
+                    <Li className='underline'><Lin to='/' >Home</Lin></Li>
+                    <Li className='underline'><Lin to='/projects' >Projects</Lin></Li>
+                    <Li className='underline'><Lin to='/resume' >Resume</Lin></Li>
+                    <Li className='underline'><Lin to='/contact' >Contact</Lin></Li>
                 </Links>
+                </div>
             </Nav>
         );
         }

@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import projectList from './projectList';
 import Project from "./Project";
 
 const Projects = () => {
@@ -16,15 +17,19 @@ const Projects = () => {
         color: #494c4e;
         margin-bottom: 100px;
     `
+    const listedProjects = projectList.map((project, i) => 
+            <Project key={project.title + i}
+                     title={project.title}
+                     pic={project.image}
+                     description={project.description} 
+                     framework={project.framework}
+                     link={project.link}
+                    />)
     return (
         <div>
             <H1>Projects I've worked on recently:</H1>
             <hr/>
-            <Project />
-            <hr style={{width: '47%'}}/>
-            <Project />
-            <hr style={{width: '47%'}}/>
-            <Project />
+            {listedProjects}
             <hr/>
             <div id='projectDiv'>
                 <h1 style={{fontFamily: '"Nunito", sans-serif', color: "#494c4e"}}>Check out my resume</h1>
